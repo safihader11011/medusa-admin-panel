@@ -64,7 +64,6 @@ const ReactTable = (props) => {
                       fontSize: '14px'
                     }}
                   >
-                    {console.log(row.cells, cellIndex)}
                     {cell.render("Cell", row.original)}
                   </td>
                 );

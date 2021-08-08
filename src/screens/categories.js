@@ -72,8 +72,9 @@ const Categories = (props) => {
             <Sidebar />
             <Header title="Categories" />
             <div className="main">
-                <div class="p-2 flex-grow-1 bd-highlight">
-                    <span style={{ fontSize: "24px", fontWeight: '600' }}>Categories List</span>
+                <div class="d-flex p-2 bd-highlight justify-content-between align-items-center">
+                    <div style={{ fontSize: "24px", fontWeight: '600' }}>Categories List</div>
+                    <div><i class="fa fa-plus-circle" style={{ fontSize: '25px', color: '#0052bb', cursor: 'pointer' }}></i></div>
                 </div>
                 {categoriesData?
                     <Table

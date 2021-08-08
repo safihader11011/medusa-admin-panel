@@ -30,11 +30,6 @@ const useStyles = makeStyles(theme => ({
         }
     },
 
-    dashboaedDiv: {
-        // marginLeft:"0.5rem",
-        marginTop: "0.5rem"
-    },
-
     heading: {
         font: "normal normal 600 2rem Poppins",
         letterSpacing: "0px",
@@ -79,27 +74,20 @@ function Header(props) {
                 <Grid container alignItems="center">
                     <Grid item>
                     </Grid>
-                    <Grid item className={classes.dashboaedDiv} sm={6} style={{ backgroundColor: "" }}>
+
+                    <div className="d-flex justify-content-between align-items-center w-100 mt-2">
                         <h1 className={classes.heading}>{props.title}</h1>
-                    </Grid>
-
-                    <Grid item sm={6} className={classes.dashboaedDiv} style={{ backgroundColor: "", textAlign: "right" }}>
-                        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-                            <InputBase
-                                placeholder="Search topics"
-                                className={classes.searchInput}
-                                startAdornment={<SearchIcon fontSize="small" />} />
-
+                        <div className="position-relative">
                             <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown} >
                                 <DropdownToggle caret className={classes.DropdownBtn}>
                                     <span>{cookies.getCookie('name')}</span>
                                 </DropdownToggle>
-                                <DropdownMenu>
+                                <DropdownMenu style={{ right: '-10px', left: 'unset' }}>
                                     <DropdownItem onClick={handleLogout}>Logout</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </div>
-                    </Grid>
+                    </div>
                 </Grid>
             </Toolbar>
         </AppBar>
