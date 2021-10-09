@@ -40,6 +40,24 @@ label.error {
 
 /* Header */
 
+/* Table */
+
+.btn-pagination {
+    background-color: #0052bb;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    margin: 0 3px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pagination.disabled {
+    background-color: #a5a5a5;
+    cursor: default;
+}
+
 
 /* .main-header {
     

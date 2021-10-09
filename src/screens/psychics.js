@@ -369,10 +369,9 @@ const Psychics = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-2"
-                                    style={{ background: "#21437E 0% 0% no-repeat padding-box", opacity: "1", color: "white", borderRadius: "5px" }}>
-                                    <div className="fees-tab">
-                                        <p>Fees: <br /> 3000/-PKR</p>
+                                <div className="col-md-2">
+                                    <div className="fees-tab" style={{ background: "#21437E", color: "white", borderRadius: "5px", padding: '10px' }}>
+                                        <p className="mb-0"><span className="mx-1">Fees:</span> $100</p>
                                     </div>
                                 </div>
                             </div>
